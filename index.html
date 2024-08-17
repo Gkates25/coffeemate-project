@@ -1,3 +1,7 @@
+<!-- Рекомендую звернути увагу на BEM та переписати проєкт використовуючи методологію BEM -->
+<!-- URL: https://getbem.com/introduction/ -->
+<!-- Таким чином ти створиш компоненти, елементи та модифікатори для простішої побудови проєкту -->
+<!-- Далі по коду я залишу коментар, що саме можна зробити за допомогою BEM -->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -6,14 +10,20 @@
 		<meta http-equiv="X-UA-Compatible" content="IE-edge" />
 		<meta name="viewport" content="widht=device-width, initial-scale=1.0" />
 
+		<!-- Краще тримати css файли у окремій директорії як і картинки. Можна навіть зробити окрему теку під ассети (assets) -->
+		<!-- Таким чином у корені у тебе буде index.html та тека assets, які буде містити css та images. Так ти відділяється сторінку від ассетів, які їй потрібні -->
+		<!-- assets/css/style.css, assets/images/image-coffee.png тощо -->
 		<link rel="stylesheet" href="style.css" />
 	</head>
 
 	<body>
+		<!-- Оскільки сайт знаходиться у контейнері, то треба зробити клас container, який ти буде використовувати не один раз -->
+		<!-- У цьому тобі допоможе BEM та розуміння компонентів -->
 		<header class="container">
 			<div class="logo">
 				<img src="image/logo.svg" alt="Logo company" class="Logo" />
 			</div>
+			<!-- BEM -->
 			<nav class="menu">
 				<ul>
 					<li><a href="#">Product</a></li>
@@ -21,7 +31,10 @@
 					<li><a href="#">Product</a></li>
 				</ul>
 			</nav>
+			<!-- BEM -->
+			<!-- BEM -->
 			<button class="outline-button">Order now</button>
+			<!-- BEM -->
 		</header>
 
 		<div class="container-block">
@@ -31,15 +44,17 @@
 					At our company, we believe that every cup of coffee is not just a beverage, but a true art form. We strive to share our passion for coffee with you through carefully
 					selected beans sourced from the finest regions of the world.
 				</p>
+				<!-- BEM -->
 				<button class="hover-button">Discover Your Perfect Brew!</button>
+				<!-- BEM -->
 			</div>
 			<div class="right-block">
-				<!-- Назви картинок пиши з маленької та у kebab-case, щоб у картинок не було пробілів. Приклад kebab-case: image-coffee.jpg або orange-bird-on-tree.jpg-->
 				<img class="image" src="image/image-coffee.png" alt="Coffee cup" />
 			</div>
 		</div>
 
 		<footer>
+			<!-- BEM -->
 			<nav class="footer-menu">
 				<ul>
 					<li><a href="#">Privacy Policy</a></li>
@@ -47,6 +62,7 @@
 					<li><a href="#">Cookies</a></li>
 				</ul>
 			</nav>
+			<!-- BEM -->
 			<div class="copyright">
 				<div>©2024</div>
 			</div>

@@ -1,178 +1,192 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaldi:wght@400;700&family=Josefin+Sans&display=swap");
+/* Спробуй підключити шрифти не через посилання, а підключишся їх через файл. Тобто скачай, поклади у теку assets та підключи до body */
+/* URL: https://www.w3schools.com/css/css3_fonts.asp */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaldi:wght@400;700&family=Josefin+Sans&display=swap');
 
+/* Основний font-family став тільки для тегу body. Основний шрифт буде Inter */
+/* Те, що написано зараз означає буквально наступне */
+/* Застосуй до всього (*) Jeldi, а потім Inter, а потім Josefin Sans */
+/* CSS працює згори вниз, тому основним шрифтом буде Josefin Sans */
+/* Зупинимось на двох шрифтах -- Inter та Josefin Sans */
 * {
-  font-family: "Jaldi", sans-serif;
-  font-family: "Inter", sans-serif;
-  font-family: "Josefin Sans", sans-serif;
+	font-family: 'Jaldi', sans-serif;
+	font-family: 'Inter', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
+/* Загальна рекомендація по стилям: намагайся залишити тільки потрібні стилі */
+/* Якщо стиль тобі не знайомий -- прочитай про нього ось тут */
+/* URL: https://developer.mozilla.org/en-US/docs/Web/CSS/outline-color */
 .outline-button {
-  font-size: 16px;
-  font-weight: 400;
-  font-family: "Josefin Sans", sans-serif;
-  width: 120px;
-  height: 40px;
-  padding: 12px 16px 12px 16px;
-  gap: 10px;
-  border-radius: 24px 24px 24px 24px;
-  opacity: 0px;
-  outline-color: 000000;
-  color: #dcc860;
-  border: 2px solid #dcc860;
-  background-color: transparent;
-  margin-left: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s ease, border-color 0.3s ease;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Josefin Sans', sans-serif;
+	width: 120px;
+	height: 40px;
+	padding: 12px 16px 12px 16px;
+	gap: 10px;
+	border-radius: 24px 24px 24px 24px;
+	opacity: 0px;
+	outline-color: 000000;
+	color: #dcc860;
+	border: 2px solid #dcc860;
+	background-color: transparent;
+	margin-left: 30px;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s ease, border-color 0.3s ease;
 }
 
 .outline-button:hover {
-  background-color: #dcc860;
-  color: white;
+	background-color: #dcc860;
+	color: white;
 }
 
 .header-text {
-  font-size: 18px;
-  font-weight: 400;
-  font-family: "Josefin Sans", sans-serif;
-  line-height: 18px;
-  padding-left: 10px;
-  padding-right: 10px;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Josefin Sans', sans-serif;
+	line-height: 18px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .header-text:hover {
-  color: #211d07;
+	color: #211d07;
 }
 
 .h1 {
-  font-size: 40px;
-  font-weight: 800;
-  font-family: "Jaldi", sans-serif;
-  margin-bottom: 0px;
+	font-size: 40px;
+	font-weight: 800;
+	font-family: 'Jaldi', sans-serif;
+	margin-bottom: 0px;
 }
 
 .p {
-  font-size: 16px;
-  font-weight: 400;
-  font-family: "Inter", sans-serif;
-  line-height: 27px;
-  margin-bottom: 30px;
-  margin-top: 0px;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Inter', sans-serif;
+	line-height: 27px;
+	margin-bottom: 30px;
+	margin-top: 0px;
 }
 
 .text-area {
-  width: 420px;
+	width: 420px;
 }
 
 .hover-button {
-  font-size: 16px;
-  font-weight: 400;
-  font-family: "Josefin Sans", sans-serif;
-  width: 240px;
-  height: 40px;
-  padding: 12px 16px 12px 16px;
-  border-radius: 24px 24px 24px 24px;
-  border: none;
-  color: #211d07;
-  background-color: #dcc860;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Josefin Sans', sans-serif;
+	width: 240px;
+	height: 40px;
+	padding: 12px 16px 12px 16px;
+	border-radius: 24px 24px 24px 24px;
+	border: none;
+	color: #211d07;
+	background-color: #dcc860;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .hover-button:hover {
-  background-color: #211d07;
-  color: white;
-  transform: scale(1.05);
+	background-color: #211d07;
+	color: white;
+	transform: scale(1.05);
 }
 
 .container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 20px 5%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 20px 5%;
 }
 
 .container-block {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 5%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 5%;
 }
 
 .menu {
-  display: flex;
-  margin-left: auto;
-  /* це посунула ліворуч лого */
+	display: flex;
+	margin-left: auto;
+	/* це посунула ліворуч лого */
 }
 .menu ul {
-  display: flex;
-  gap: 32px;
+	display: flex;
+	gap: 32px;
 }
 
 .menu a {
-  text-decoration: 0;
-  color: #211d07;
+	text-decoration: 0;
+	color: #211d07;
 }
 
 .menu li {
-  display: inline;
+	display: inline;
 }
 
 .menu a:hover {
-  color: #dcc860;
+	color: #dcc860;
 }
 /*не вийшло зробити полосками хоча прописувала border-top: 2px #DCC860;*/
+/* Прочитай про pseudo elements */
+/* border-top теж спрацює, але для тегу <a> додати display: inline-flex */
+/* Чому саме так, читати тут */
+/* URL: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model */
 
 .left-block {
-  display: flex;
-  justify-content: space-between;
-  width: 414px;
-  padding-top: 50px;
-  flex-direction: column;
+	display: flex;
+	justify-content: space-between;
+	width: 414px;
+	padding-top: 50px;
+	flex-direction: column;
 }
 
 .right-block {
-  padding-top: 50px;
+	padding-top: 50px;
 }
 
 .footer-menu {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .footer-menu ul {
-  list-style-type: none;
-  display: flex;
+	list-style-type: none;
+	display: flex;
 }
 
 .footer-menu li {
-  margin: 0 12px;
+	margin: 0 12px;
 }
 
 .footer-menu a {
-  color: #211d07;
-  text-decoration: none;
-  font-size: 14px;
+	color: #211d07;
+	text-decoration: none;
+	font-size: 14px;
 }
 
 .footer-menu a:hover {
-  color: #dcc860;
+	color: #dcc860;
 }
 
 .image {
-  width: 461px;
-  height: 420px;
-  gap: 0px;
-  opacity: 0px;
+	width: 461px;
+	height: 420px;
+	gap: 0px;
+	opacity: 0px;
 }
 
 .copyright {
-  font-size: 12px;
-  font-weight: 400;
-  font-family: "Josefin Sans", sans-serif;
-  line-height: 18px;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: #9d9d9d;
-  display: flex;
-  justify-content: center;
+	font-size: 12px;
+	font-weight: 400;
+	font-family: 'Josefin Sans', sans-serif;
+	line-height: 18px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #9d9d9d;
+	display: flex;
+	justify-content: center;
 }
