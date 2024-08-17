@@ -101,6 +101,11 @@
 .menu {
   display: flex;
   margin-left: auto;
+  /* це посунула ліворуч лого */
+}
+.menu ul {
+  display: flex;
+  gap: 32px;
 }
 
 .menu a {
@@ -110,7 +115,6 @@
 
 .menu li {
   display: inline;
-  margin-right: 20px;
 }
 
 .menu a:hover {
